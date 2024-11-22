@@ -1,0 +1,123 @@
+body {
+    line-height: 1.6;
+    background-color: #bcbdbc;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #59bdd1;
+    color: aliceblue;
+    text-align: center;
+    padding: 1rem;
+}
+
+section {
+    padding: 20px; /* تعديل المسافات لتناسب الهاتف */
+}
+
+button:hover {
+    background-color: #48070f;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* تأكيد توسيط المحتوى */
+    background: url(imga/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    flex-direction: column;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+main h1 {
+    font-size: 3em;
+    color: aliceblue;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+main p {
+    font-size: 1.8em; /* زيادة حجم النص ليتناسب مع الهواتف */
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+main button {
+    font-size: 1.5em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875;
+    color: #ffffff;
+    background-color: #000000;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transform: scale(1.1);
+    transition: 0.10 ease;
+}
+
+#azkar-output, #wudu-output {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    font-size: 1.5em; /* زيادة حجم الخط في الأذكار والوضوء */
+}
+
+#tasbeeh-counter {
+    font-size: 2em;
+    color: yellow;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer {
+    font-size: 1.5em;
+    color: rgb(0, 1, 1);
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2em; /* تصغير الخط في الأجهزة الصغيرة */
+    }
+
+    main h1 {
+        font-size: 2.5em;
+    }
+
+    main p {
+        font-size: 1.5em;
+    }
+
+    main button {
+        font-size: 1.2em;
+        padding: 1em 2em; /* تعديل المسافة في الأزرار */
+    }
+
+    #azkar-output, #wudu-output {
+        font-size: 1.2em; /* تصغير حجم الخطوط في الأذكار والوضوء للأجهزة الصغيرة */
+        padding: 15px;
+    }
+
+    #tasbeeh-counter {
+        font-size: 1.5em;
+        width: 80px;
+    }
+}
